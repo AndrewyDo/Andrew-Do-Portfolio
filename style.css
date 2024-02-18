@@ -89,19 +89,64 @@ nav ul li a:hover::after {
     flex-wrap: wrap;
 }
 
-.aboutImage{
+.about-image{
     flex-basis: 35%;
 }
 
-.aboutImage img {
+.about-image img {
     width: 100%;
-    border-radius: 15px;
+    border-radius: 20px;
 }
 
-.aboutDesc {
+.about-desc {
     flex-basis: 60%;
 }
 
-#sub-intro {
-    font-size: 13px;
+.sub-title {
+    font-size: 55px;
+    font-weight: 580;
+    color: weight;
+}
+
+.tag-titles {
+    display: flex;
+    margin: 20px 0px 40px;
+}
+
+.tag-links {
+    margin-right: 50px;
+    font-size: 25px;
+    font-weight: 400;
+    cursor: pointer;
+    position: relative;
+}
+
+.tag-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: lightblue;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s
+}
+
+.tag-content ul li {
+    margin: 10px 0;
+    font-size: 15px;
+}
+
+.tag-content ul li span {
+    color: lightblue;
+    font-size: 20px;
+}
+
+.tag-content {
+    display: none;
+
+}
+.tag-content.active-tag {
+    display: block;
+
 }

@@ -9,19 +9,19 @@
     
 </head>
 <body>
-<div id = "header">
+<div id="header">
     <div class="container">
         <nav>
-            <img src= "imagesPortfolio/And.png" class = "logo">
+            <img src="imagesPortfolio/And.png" class="logo">
         <ul>
-            <li><a href = "#header" >Home</a></li>
-            <li><a href = "#about" >About</a></li>
-            <li><a href = "#" >Portfolio</a></li>
-            <li><a href = "#" >Contact</a></li>
+            <li><a href="#header" >Home</a></li>
+            <li><a href="#about" >About</a></li>
+            <li><a href="#" >Portfolio</a></li>
+            <li><a href="#" >Contact</a></li>
         </ul>
         </nav>
         </div>
-    <div class = "header-text">
+    <div class="header-text">
         <h1><span>Hi! I am Andrew</span>
             <br><p>Tech Trainer Intern/Full-Time Student</p>
             <br>On the path to gain more technical
@@ -29,19 +29,71 @@
         </h1>
     </div>
 </div>
-/* about */
-<div id  = "about">
-    <div class = "container">
-        <div class = "row">
-            <div class = "aboutImage">
-                <img src = "imagesPortfolio/IMG_0847.jpg">
+<div id ="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-image">
+                <img src="imagesPortfolio/IMG_0847.jpg">
             </div>
-            <div class = "aboutDesc">
-                <h1> About Me </h1>
+            <div class="about-desc">
+                <h1 class="sub-title">About Me</h1>
                 <p>I am currently a full-time student at Loyola University Chicago majoring in computer science. My expected graduation date is December of 2024. I have been working as a technology trainer for Compudopt where I gain the opportunity to empower individuals in technology, both hardware and software, and making it accessible for all. I am passionate in programming and would like to continue my tech journey by delving into the realm of software engineering. I have taken many relevant courses as well as independent cources which help assist my computer science degree. I also have a few projects I have been working on which you can explore on this website. </p>
-            </div>
+                <div class="tag-titles">
+                    <p class="tag-links active-link" onclick ="opentab('skills')">Skills</p>
+                    <p class="tag-links" onclick ="opentab('experience')">Experience</p>
+                    <p class="tag-links" onclick ="opentab('education')">Education</p>
+                </div>
+                <div class="tag-content active-tag" id="skills">
+                    <ul>
+                        <li><span>Java</span><br>Utilizization of Object-Oriented Programming principles to create robust software development</li>
+                        <li><span>HTML/CSS</span><br>Designing web applications with user-friendly principles </li>
+                        <li><span>C</span><br>Navigating through system-level operations within various operating systems</li>
+                        <li><span>JavaScript</span><br>Enhancing web interactivity and allowing for dynamic web design</li>
+                
+                    </ul>
+
+                </div>
+
+                <div class="tag-content" id="experience">
+                    <ul>
+                        <li><span>Compudopt</span><br></li>
+                        <li><span>HTML/CSS</span><br>Designing web applications with user-friendly principles </li>
+                        <li><span>C</span><br>Navigating through system-level operations within various operating systems</li>
+                        <li><span>JavaScript</span><br>Enhancing web interactivity and allowing for dynamic web design</li>
+                
+                    </ul>
+
+                </div>
+
+                <div class="tag-content" id="education">
+                    <ul>
+                        <li><span>Java</span><br>Utilizization of Object-Oriented Programming principles to create robust software development</li>
+                        <li><span>HTML/CSS</span><br>Designing web applications with user-friendly principles </li>
+                        <li><span>C</span><br>Navigating through system-level operations within various operating systems</li>
+                        <li><span>JavaScript</span><br>Enhancing web interactivity and allowing for dynamic web design</li>
+                
+                    </ul>
+
+                </div>
         </div>
     </div>
 </div>
+
+<script>
+    var taglinks = document.getElementsByClassName("tag-links");
+    var tagcontents = document.getElementsByClassName("tag-content");
+
+    function opentab(tagname) {
+        for (taglink of taglinks) {
+            taglink.classList.remove("active-link");
+        }
+    
+        for (tagcontent of tagcontents) {
+            tagcontent.classList.remove("active-tag");
+        }
+
+    }
+</script>
+
 </body>
 </html>
