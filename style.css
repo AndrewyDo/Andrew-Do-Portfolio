@@ -27,6 +27,7 @@ nav {
     flex-wrap: wrap;
 }
 
+
 .logo {
     width: 115px;
     height:40px;
@@ -129,12 +130,14 @@ nav ul li a:hover::after {
     position: absolute;
     left: 0;
     bottom: -8px;
-    transition: 0.5s
+    transition: 0.3s
 }
 
 .tag-content ul li {
+    list-style: none;
     margin: 10px 0;
     font-size: 15px;
+
 }
 
 .tag-content ul li span {
@@ -146,7 +149,15 @@ nav ul li a:hover::after {
     display: none;
 
 }
+
+
 .tag-content.active-tag {
     display: block;
 
 }
+
+.tag-links.active-link::after {
+    width: 30%;
+
+}
+

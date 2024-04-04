@@ -20,7 +20,7 @@
             <li><a href="#" >Contact</a></li>
         </ul>
         </nav>
-        </div>
+    </div>
     <div class="header-text">
         <h1><span>Hi! I am Andrew</span>
             <br><p>Tech Trainer Intern/Full-Time Student</p>
@@ -29,7 +29,7 @@
         </h1>
     </div>
 </div>
-<div id ="about">
+<section id ="about">
     <div class="container">
         <div class="row">
             <div class="about-image">
@@ -43,39 +43,80 @@
                     <p class="tag-links" onclick ="opentab('experience')">Experience</p>
                     <p class="tag-links" onclick ="opentab('education')">Education</p>
                 </div>
+
                 <div class="tag-content active-tag" id="skills">
                     <ul>
-                        <li><span>Java</span><br>Utilizization of Object-Oriented Programming principles to create robust software development</li>
-                        <li><span>HTML/CSS</span><br>Designing web applications with user-friendly principles </li>
-                        <li><span>C</span><br>Navigating through system-level operations within various operating systems</li>
-                        <li><span>JavaScript</span><br>Enhancing web interactivity and allowing for dynamic web design</li>
-                
+                        <li><span>Java</span><br>Utilizization of Object-Oriented Programming principles to create robust software development.</li>
+                        <li><span>HTML/CSS</span><br>Designing web applications with user-friendly principles.</li>
+                        <li><span>C</span><br>Navigating through system-level operations within various operating systems.</li>
+                        <li><span>JavaScript</span><br>Enhancing web interactivity and allowing for dynamic web design.</li>
                     </ul>
-
                 </div>
+
+
 
                 <div class="tag-content" id="experience">
                     <ul>
-                        <li><span>Compudopt</span><br></li>
-                        <li><span>HTML/CSS</span><br>Designing web applications with user-friendly principles </li>
-                        <li><span>C</span><br>Navigating through system-level operations within various operating systems</li>
-                        <li><span>JavaScript</span><br>Enhancing web interactivity and allowing for dynamic web design</li>
-                
-                    </ul>
+                        <li>
+                            <span>Compudopt</span>
+                            <ul>
+                                <li>Technology Training: Conduct technology training sessions ranging from hardware and software subjects. This included coding, robotics, hardware troubleshooting, and software components.</li>
+                                <li>Programming Instruction: Specifically, effectively teach student a variety of programming languages including Javascript, Python, Makecode and Scratch. The curriculum with Makecode extends to incorporating hardware elements such as microbits for constructing sensors and other technology related projects.</li>
+                                <li>Curriculum Development: Develop and adapt training materials and interactive lesson plans to ensure thorough learning experiences. Also, collaborated with colleagues during this process.</li>
+                                <li>Community Engagement: Participate in community outreach efforts to promote tech education.</li>
+                            </ul>
+                        </li>
 
+                        <li>
+                            <span>Integris Bass Baptist Hospital</span>
+                            <ul>
+                                <li>Patient Assistance: Engaged in welcoming patients, addressing inquiries and providing navigational guidance in orfer to enhance the patient's experience.</li>
+                                <li>Medical Supply Coordination: Responsible for organizing medical devices and supplies for nurses and doctors. Made sure to communicate with medical staff to place items in correct department.</li>
+                                <li>Document Management: Organized and filed paperwork, encompassing patient records and medical charts. Maintained protocol for confidentiality to maintain data integrity.</li>
+                                <li>Operation Room Preparation: Contributed to operational efficiency by sanitizing operation rooms and repleneshing medical supplies.</li>
+                            </ul>
+                        </li>
+
+                        <li><span>Mac's Mart 2 and Sooner Stop</span>
+                            <ul>
+                                <li>Product Management: Monitored inventory levels in order to ensure products were always stocked.</li>
+                                <li>Quality Control: checked for damages, defects and made sure the correct amount of product was received.</li>
+                                <li>Communication: Assisted customers with basic inquiries. Sharpened my communication skills.</li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
 
                 <div class="tag-content" id="education">
                     <ul>
-                        <li><span>Java</span><br>Utilizization of Object-Oriented Programming principles to create robust software development</li>
-                        <li><span>HTML/CSS</span><br>Designing web applications with user-friendly principles </li>
-                        <li><span>C</span><br>Navigating through system-level operations within various operating systems</li>
-                        <li><span>JavaScript</span><br>Enhancing web interactivity and allowing for dynamic web design</li>
+                        <li><span>Loyola University Chicago</span><br>I am pursuing a degree in computer science degree at Loyola. I am currently set to graduation in the Fall of 2024.</li>
+                        <li><span>FreeCodeCamp</span><br>I have completed a few courses offered by FreeCodeCamp including the Responsive Web Design and JS Algorithms and Data Structures. </li>
+                
                 
                     </ul>
 
                 </div>
         </div>
+    </div>
+</section>
+
+<!--Projects-->
+<section id="projects">
+    <div class="container">
+        <h1 class="section-title">Projects</h1>
+    
+    </div>
+</section>
+
+<!--Experience-->
+<div class="experience-entry">
+    <div class="experience-details">
+        <h3>Technology Trainer/Tutor</h3>
+        <h4>Compudopt</h4>
+        <ul>
+            <li>Communication: Directed and guided patient throughout the hospital</li>
+            <li>Organization: Responsible for organizing medical devices and supplies for nurses and doctors</li>
+        </ul>
     </div>
 </div>
 
@@ -91,7 +132,8 @@
         for (tagcontent of tagcontents) {
             tagcontent.classList.remove("active-tag");
         }
-
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tagname).classList.add("active-tag")
     }
 </script>
 
