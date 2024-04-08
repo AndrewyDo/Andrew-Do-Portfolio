@@ -103,10 +103,11 @@ nav ul li a:hover::after {
     flex-basis: 60%;
 }
 
-.sub-title {
+.subtitle {
     font-size: 55px;
     font-weight: 580;
     color: weight;
+    padding: 15px 0;
 }
 
 .tag-titles {
@@ -161,3 +162,30 @@ nav ul li a:hover::after {
 
 }
 
+/*---Projects---*/
+.project {
+    margin-bottom: 30px;
+    background-color: #1e1e1e; 
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.project h3 {
+    color: lightblue; 
+    margin-bottom: 10px;
+}
+
+.project p {
+    color: #d3d3d3; 
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.project a {
+    color: #00BFFF; 
+    font-weight: bold;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
