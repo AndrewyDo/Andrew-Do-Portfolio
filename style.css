@@ -31,7 +31,6 @@ nav {
 .logo {
     width: 115px;
     height:40px;
-    
 }
 
 nav ul li{
@@ -51,10 +50,10 @@ nav ul li a::after{
     content: '';
     width: 0; 
     height: 3px; 
-    background: white;
+    background: lightblue;
     position: absolute;
     left: 0;
-    bottom: -6px;
+    bottom: -4px;
     transition: .6s;
 }
 
@@ -188,4 +187,42 @@ nav ul li a:hover::after {
 
 .project a:hover {
     text-decoration: underline;
+}
+
+/*---Contact---*/
+
+.left-contact {
+    flex-basis: 40%;
+}
+
+.contact-left p {
+    margin-top: 30px;
+}
+
+.right-contact {
+    flex-basis: 60%;
+}
+
+.left-contact p i{
+    font-size: 15px;
+    margin-right: 15px;
+    color: lightblue;
+}
+
+.social-icons {
+    margin-top: 25px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    margin-right: 10px;
+    color: lightblue;
+    font-size: 20px;
+    display:inline-block;
+    
+}
+
+.social-icons a:hover {
+    color: white;
+    transform: translateY(-3px);
 }

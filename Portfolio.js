@@ -12,3 +12,4 @@ var taglinks = document.getElementsByClassName("tag-links");
         event.currentTarget.classList.add("active-link");
         document.getElementById(tagname).classList.add("active-tag")
     }
+    
