@@ -4,6 +4,10 @@
     font-family: CourierNew, monospace;
     box-sizing: border-box;
 }
+
+html{
+    scroll-behavior: smooth;
+}
 body {
     background: black;
     color: white;
@@ -191,20 +195,20 @@ nav ul li a:hover::after {
 
 /*---Contact---*/
 
-.left-contact {
+.top-contact {
     flex-basis: 100%;
 }
 
-.left-contact p {
+.top-contact p {
     margin-top: 10px;
 }
 
-.right-contact {
+.bottom-contact {
     margin-top: 30px;
     flex-basis: 50%;
 }
 
-.right-contact form {
+.bottom-contact form {
     width: 100%;
 }
 
@@ -227,7 +231,17 @@ form .btn1 {
     margin-top: 15px;
 }
 
-.left-contact p i{
+form.textarea {
+    text-align: left;
+}
+
+#message {
+    margin-top: 40px;
+    display: block;
+
+}
+
+.top-contact p i{
     font-size: 15px;
     margin-right: 15px;
     color: lightblue;
@@ -279,7 +293,7 @@ form .btn1 {
 
 @media only screen and (max-width: 750px) {
     
-    .right-contact {
+    .bottom-contact {
         flex-basis: 100%;
         max-width: 100%;
         box-sizing: border-box;

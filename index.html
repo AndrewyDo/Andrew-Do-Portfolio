@@ -17,7 +17,7 @@
             <ul>
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#project">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -38,7 +38,7 @@
             </div>
             <div class="about-desc">
                 <h1 class="subtitle">About Me</h1>
-                <p>I am currently a full-time student at Loyola University Chicago majoring in computer science. My expected graduation date is December of 2024. I have been working as a technology trainer for Compudopt where I gain the opportunity to empower individuals in technology, both hardware and software, and making it accessible for all. I am passionate in programming and would like to continue my tech journey by delving into the realm of software engineering. I have taken many relevant courses as well as independent cources which help assist my computer science degree. I also have a few projects I have been working on which you can explore on this website. </p>
+                <p>I am currently a full-time student at Loyola University Chicago majoring in computer science. My expected graduation date is December of 2024. I have been working as a technology trainer for Compudopt where I gained the opportunity to empower individuals in technology, both hardware and software, and making it accessible for all. I am passionate in programming and would like to continue my tech journey by delving into the realm of software engineering. I have taken many relevant courses as well as independent cources which help assist my computer science degree. I also have a few projects I have been working on which you can explore on this website. </p>
                 <div class="tag-titles">
                     <p class="tag-links active-link" onclick ="opentab('skills')">Skills</p>
                     <p class="tag-links" onclick ="opentab('experience')">Experience</p>
@@ -49,12 +49,12 @@
                     <ul>
                         <li><span>Java</span><br>Utilizization of Object-Oriented Programming principles to create robust software development.</li>
                         <li><span>HTML/CSS</span><br>Designing web applications with user-friendly principles.</li>
+                        <li><span>Python</span><br></li>
                         <li><span>C</span><br>Navigating through system-level operations within various operating systems.</li>
                         <li><span>JavaScript</span><br>Enhancing web interactivity and allowing for dynamic web design.</li>
+
                     </ul>
                 </div>
-
-
 
                 <div class="tag-content" id="experience">
                     <ul>
@@ -90,19 +90,34 @@
 
                 <div class="tag-content" id="education">
                     <ul>
-                        <li><span>Loyola University Chicago</span><br>I am pursuing a degree in computer science degree at Loyola. I am currently set to graduation in the Fall of 2024.</li>
-                        <li><span>FreeCodeCamp</span><br>I have completed a few courses offered by FreeCodeCamp including the Responsive Web Design and JS Algorithms and Data Structures. </li>
-                
+                        
+                        <li><span>Loyola University Chicago - Relevant Coursework</span><br>
+                            <ul>
+                                <li>Object-Oriented Programming</li>
+                                <li>Computer Systems</li>
+                                <li>Data Structures I & II</li>
+                                <li>Computer Security</li>
+                                <li>Operating Systems</li>
+                                <li>Object-Oriented Design</li>
+                                <li>Game Development</li>
+                                <li>Client-Side Web Development</li>
+                            </ul>
+                        </li>
+                        <li><span>FreeCodeCamp - Completed Courses</span><br>
+                            <ul>
+                                <li>Responsive Web Design</li>
+                                <li>Scientific Computing with Python</li>
+                            </ul>
+                        </li>
                 
                     </ul>
-
                 </div>
         </div>
     </div>
 </section>
 
 <!--Projects-->
-<section id="portfolio">
+<section id="project">
     <div class="container">
         <h1 class="subtitle">My Projects</h1>
         <div class="project-list">
@@ -117,18 +132,24 @@
             <!--Project 2-->
             <div class="project">
                 <h3>Landfall</h3>
-                <p>In the rpg based game Landfall, players command a PMC, accepting contracts and engaging in tactical combat. My role includes designing gameplay mechanics such as movement and programming the game's core functions. Current features enable player movement and basic enemy interactions within a Pygame environment. The game's objective is in the format of a reputation-based contract system, skill progression, and an cpu that challenges the player. Higher reputation will grant you more and higher stake contracts in order to receive more reputation and cash which you will be able to use to upgrade your player. In the end, it will be a fully immersive strategic game.</p>
+                <p>In the RPG based game Landfall, players command a PMC, accepting contracts and engaging in tactical combat. My role includes designing gameplay mechanics such as movement and programming the game's core functions. Current features enable player movement and basic enemy interactions within a Pygame environment. The game's objective is in the format of a reputation-based contract system, skill progression, and an cpu that challenges the player. Higher reputation will grant you more and higher stake contracts in order to receive more reputation and cash which you will be able to use to upgrade your player. In the end, it will be a fully immersive strategic game.</p>
                 <a href="https://github.com/AndrewyDo/COMP323-Landfall" target="_blank">View on GitHub</a>
             </div>
 
             <!--Project 3-->
             <div class="project">
                 <h3>Personal Portfolio</h3>
-                <p></p>
-                <a href="" target="_blank">View on Github</a>
+                <p>This website was developed using HTML, CSS, and JavaScript to showcase the entirety of my portfolio. It features detailed descriptions of my projects, along with links to their respective GitHub repositories. Additionally, the site includes a contact page that uses Google Sheets to collect inquiries. You can also find links to my LinkedIn, GitHub, and Instagram profiles. Lastly, you can directly download my resume in the format of a pdf.</p>
+                <a href="https://github.com/AndrewyDo/Andrew-Do-Portfolio" target="_blank">View on Github</a>
             </div>
 
-            
+            <!--Project 4-->
+            <div class="project">
+                <h3>Forth Project</h3>
+                <p></p>
+                <a href="https://github.com/AndrewyDo/Group-Forth-Project" target="_blank">View on Github</a>
+            </div>
+
         </div>
     </div>
 </section>
@@ -137,7 +158,7 @@
 <section id="contact">
     <div class="container">
         <div class="row">
-            <div class="left-contact">
+            <div class="top-contact">
                 <h1 class="subtitle">Contact Me</h1>
                 <p><i class="fa-regular fa-paper-plane"></i>andrewydo@gmail.com</p>
                 <p><i class="fa-solid fa-phone"></i>580-977-7360</p>
@@ -149,14 +170,14 @@
                 <a href="FIll THIS IN!!!" download class="btn btn1">Download Resume</a>
             </div>
 
-            <div class="right-contact">
-                <form>
+            <div class="bottom-contact">
+                <form name="submit-to-google-sheet">
                     <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message">
-                    </textarea>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                     <button type="submit" class="btn btn1">Submit</button>
                 </form>
+                <span id="message"></span>
             </div>
         </div>
     </div>
@@ -164,9 +185,8 @@
 
 <footer class="copyright"><p>Copyright © Andrew<p></footer>
 
-
-<script src = "index.js">
-</script>
+<script src = "index.js"></script>
+<script src = "form.js"></script>
 
 </body>
 </html>
