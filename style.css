@@ -54,7 +54,7 @@ nav ul li a::after{
     content: '';
     width: 0; 
     height: 3px; 
-    background: lightblue;
+    background: white;
     position: absolute;
     left: 0;
     bottom: -4px;
@@ -98,7 +98,8 @@ nav ul li a:hover::after {
 }
 
 .about-image img {
-    width: 100%;
+    width: 80%;
+    height: 85%;
     border-radius: 20px;
 }
 
@@ -140,8 +141,7 @@ nav ul li a:hover::after {
 .tag-content ul li {
     list-style: none;
     margin: 10px 0;
-    font-size: 15px;
-
+    font-size: 12px;
 }
 
 .tag-content ul li span {
@@ -151,18 +151,20 @@ nav ul li a:hover::after {
 
 .tag-content {
     display: none;
-
 }
 
 
 .tag-content.active-tag {
     display: block;
-
 }
 
 .tag-links.active-link::after {
     width: 30%;
+}
 
+#skills.active-tag {
+    display: flex;
+    justify-content: space-between;
 }
 
 /*---Projects---*/
