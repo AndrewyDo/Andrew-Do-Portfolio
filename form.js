@@ -9,7 +9,7 @@ fetch(scriptURL, { method: 'POST', body: new FormData(form)})
         message.innerHTML = "Message sent successfully!"
         setTimeout(function() {
             message.innerHTML = ""
-        }, 3000)
+        }, 4000)
         form.reset()
     })
     .catch(error => console.error('Error!', error.message))
