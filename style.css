@@ -164,7 +164,7 @@ nav ul li a:hover::after {
 }
 
 .tag-links.active-link::after {
-    width: 30%;
+    width: 30px;
 }
 
 #skills.active-tag {
@@ -294,6 +294,11 @@ form.textarea {
     text-align: center;
     width: 100%;
     padding: 30px;
+}
+
+#experience .e-list li{
+    margin-left: 20px;
+    list-style: circle;
 }
 
 /*---media settings---*/
