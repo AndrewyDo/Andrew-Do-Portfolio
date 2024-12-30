@@ -14,12 +14,14 @@
     <div class="container">
         <nav>
             <img src="imagesPortfolio/And.png" class="logo">
-            <ul>
+            <ul id="menu">
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#project">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-x" onclick="closemenu()"></i>
             </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
     </div>
     <div class="header-text">
@@ -232,6 +234,7 @@
 <footer class="copyright"><p>Copyright © Andrew<p></footer>
 
 <script src = "index.js"></script>
+<script src = "menu.js"></script>
 <script src = "form.js"></script>
 
 </body>
