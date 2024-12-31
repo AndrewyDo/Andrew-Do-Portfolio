@@ -307,69 +307,132 @@ nav .fa-solid{
 }
 
 @media only screen and (max-width: 750px) {
-    #header{
-        background-image: url(imagesPortfolio/BackgroundUnsplash.jpg);
-        width: 100%;
+    html, body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
     }
 
+    .about-desc .desc{
+        font-size: 12px;
+        padding-right: 10%;
+    }
+  
+    section,
+    .container,
+    .header-text {
+      width: 100%;
+      max-width: 100%;
+      padding: 0 1rem;
+      box-sizing: border-box;
+    }
+  
+    #header {
+      background-image: url(imagesPortfolio/BackgroundUnsplash.jpg);
+      background-size: cover;
+      background-position: center;
+      height: auto;
+      min-height: 100vh;
+      padding-top: 15px;
+    }
+  
     .header-text h1 {
+      font-size: 16px;
+      line-height: 1.2;
+      margin: 1rem 0;
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+      word-break: break-word;
+      white-space: normal;
+    }
+  
+    .header-text h1 span {
+      font-size: 26px;
+    }
+  
+    .subtitle {
+      font-size: 28px;
+      line-height: 1.2;
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+      word-break: break-word;
+      white-space: normal;
+    }
+  
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+  
+    nav .fa-solid {
+      display: block;
+      font-size: 25px;
+      cursor: pointer;
+    }
+
+    p,
+    li,
+    .about-desc,
+    .project p {
+      font-size: 14px;
+      line-height: 1.4;
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+      word-break: break-word;
+      white-space: normal;
+    }
+  
+  
+    nav ul {
+      position: fixed;
+      top: 0;
+      right: -170px;
+      width: 170px;
+      height: 100vh;
+      background: grey;
+      padding-top: 50px;
+      z-index: 2;
+      transition: right 0.4s;
+      overflow-y: auto;
+    }
+  
+    nav ul li {
+      display: block;
+      margin: 25px;
+    }
+  
+    nav ul .fa-solid {
+      position: absolute;
+      top: 25px;
+      left: 25px;
+      cursor: pointer;
+    }
+  
+    .left-column,
+    .right-column,
+    .top-contact,
+    .bottom-contact {
+      flex-basis: 100%;
+      margin: 0 0 1rem 0;
+    }
+  
+    .tag-titles {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+  
+    .tag-links {
+      font-size: 18px;
+      white-space: nowrap;
+      overflow-wrap: normal;
+      word-break: normal;
+    }
+
+    .tag-content ul li span {
         font-size: 15px;
     }
-
-    nav .fa-solid{
-        display: block;
-        font-size: 25px;
-        cursor: pointer;
-    }
-
-    nav ul{
-        background: grey;
-        position: fixed;
-        top: 0;
-        right: -200px;
-        width: 200px;
-        height: 100vh;
-        padding-top: 50px;
-        z-index: 2;
-        transition: right 0.4s;
-    }
-
-    nav ul li{
-        display: block;
-        margin: 25px;
-
-    }
-
-    nav ul .fa-solid{
-        position: absolute;
-        top: 25px;
-        left: 25px;
-        cursor: pointer;
-    }
-
-    .subtitle{
-        font-size: 40px;
-    }
-
-    .left-column, .right-column{
-        flex-basis: 100%;
-    }
-
-    .left-column{
-        margin-bottom: 30px;
-    }
-
-    .right-column{
-        font-size: 14px;
-    }
-
-    .tab-links{
-        font-size: 15px;
-        margin-right: 20px;
-    }
-
-    .top-contact, .bottom-contact{
-        flex-basis: 100%;
-    }
-
-}
+  }
+  
