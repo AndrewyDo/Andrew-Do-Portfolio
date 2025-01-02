@@ -72,7 +72,7 @@ nav ul li a:hover::after {
 }
 
 .header-text {
-    margin-top: 10%;
+    margin-top: 7%;
     font-size:15px;
     text-align: center;
 }
@@ -315,7 +315,7 @@ nav .fa-solid{
 
     .about-desc .desc{
         font-size: 12px;
-        padding-right: 10%;
+        padding-right: 20%;
     }
   
     section,
@@ -383,7 +383,6 @@ nav .fa-solid{
       white-space: normal;
     }
   
-  
     nav ul {
       position: fixed;
       top: 0;
@@ -425,14 +424,21 @@ nav .fa-solid{
     }
   
     .tag-links {
-      font-size: 18px;
+      font-size: 15px;
       white-space: nowrap;
       overflow-wrap: normal;
       word-break: normal;
     }
 
     .tag-content ul li span {
-        font-size: 15px;
+        font-size: 12px;
+    }
+    .tag-content ul li{
+        font-size: 10px;
+    }
+
+    .tag-content ul {
+        padding-right: 10%;
     }
   }
   
